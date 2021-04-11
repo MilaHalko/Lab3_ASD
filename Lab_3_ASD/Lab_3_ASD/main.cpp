@@ -18,17 +18,9 @@ int main() {
     cout << "Result: " << result << endl;
     //---------------------------------------------------------------------------
     
-    vector <int> max_degree_V;
+    vector <vector<int>> max_degree_V;
     
     Find_degree_V(Albania, max_degree_V);
-    
-    //---------------------------------------------------------------------------
-    cout << "Vector max_degree_V in main: ";
-    for (int i = 0; i < max_degree_V.size(); i++) {
-        cout << max_degree_V[i] << " ";
-    }
-    cout << endl;
-    //---------------------------------------------------------------------------
     
     vector<vector<string>> v_colors;
     v_colors.resize(1);

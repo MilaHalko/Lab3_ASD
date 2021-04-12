@@ -121,13 +121,10 @@ bool Coloring(vector<int> &a_colors, Cities &Albania, vector<vector<int>> &V_deg
         }
         
         
-        if (counter != 0) {
-            path[counter - 1][0] = V_degree[i][j];
-            path[counter - 1][1] = i;
-            path[counter - 1][2] = j;
-            a_colors[path[counter - 1][0]] = 1;
-        }
-        
+        path[counter - 1][0] = V_degree[i][j];
+        path[counter - 1][1] = i;
+        path[counter - 1][2] = j;
+        a_colors[path[counter - 1][0]] = 1;
         l = 0;
         
         while (l < 15){
@@ -146,7 +143,7 @@ bool Coloring(vector<int> &a_colors, Cities &Albania, vector<vector<int>> &V_deg
                             if (counter == 1) {
                                 i = 0;
                                 j = path[counter - 1][2] + 1;
-                                if (j == 7) {
+                                if (j == 6) {
                                     return 0;
                                 }
                                 
